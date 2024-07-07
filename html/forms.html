@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <link rel="stylesheet" href="/general.css">
+    <style>
+        input{
+            margin:10px 0;
+        }
+    </style>
+</head>
+<body>
+   <main class="main">
+    <a href="/html-dashboard.html"> <button class="nav-btn">Back to Dashboard</button></a>
+    <h1 class="head">HTML Forms</h1>
+
+    <ul>
+        <li>The HTML &lt;form&gt; element is used to create an HTML form for user input. </li>
+        <li>The &lt;form&gt; element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</li>
+    </ul>
+
+    <div class="syntax-head">
+   <p class="syntax">Syntax:</p>
+    <p>
+        &lt;form&gt;<br>
+        &lt;label for="fname">First name:&lt;/label&gt;<br>
+        &lt;input type="text" id="fname" name="fname"&gt;<br>
+        &lt;label for="lname">Last name:&lt;/label&gt;<br>
+        &lt;input type="text" id="lname" name="lname"&gt;<br>
+        &lt;input type="submit" value="Submit"&gt;<br>
+        &lt;/form&gt;
+    </p>
+    </div>
+
+    <p class="syntax">Output:</p>
+    <div class="output">
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+
+    <h3 class="sec-head">&lt;Lable&gt; element</h3>
+    <ul>
+        <li>The &lt;label&gt; tag defines a label for many form elements.</li>
+        <li>The &lt;label&gt; element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.</li>
+        <li>The &lt;label&gt; element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the &lt;label&gt; element, it toggles the radio button/checkbox.</li>
+    </ul>
+
+    <h3 class="sec-head">&lt;Input&gt; element</h3>
+    <ul>
+        <li>The HTML &lt;input&gt; element is the most used form element.</li>
+        <li>An &lt;input&gt; element can be displayed in many ways, depending on the type attribute.</li>
+    </ul>
+
+    <div class="btn-container">
+        <a href="description-list.html"><button class="nav-btn">Previous</button></a>
+        <a href="input.html"><button class="nav-btn">Next</button></a>
+    </div>
+   </main> 
+</body>
+</html>

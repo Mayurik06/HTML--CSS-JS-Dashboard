@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <link rel="stylesheet" href="/general.css">
+    <style>
+        .static{
+            position: static;
+            border: 3px solid #73AD21;
+        }.relative, .relative-two{
+            position: relative;
+            border: 3px solid #73AD21;
+        }
+        .relative-two{width: 300px;
+        height: 400px;}
+        .fixed{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            border:3px solid #73AD21;
+        }.absolute{
+            position: absolute;
+            height: 200px;
+            border:3px solid #73AD21;
+            width: 200px;
+            bottom: 10px;
+            left: 20px;
+        }.re-width{
+            width: 400px;
+            height: 200px;
+            overflow: scroll;
+        }.re-width h1, p{margin-bottom: 10px;}
+        .sticky{
+            position: sticky;
+            top:0;
+            background-color: #578b0d;
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+        <h1 class="head">CSS Position property</h1>
+        <ul>
+            <li>The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).</li>
+            <li>The position property specifies the type of positioning method used for an element.</li>
+            <li>There are five different position values:<br><br>
+            <ul>
+                <li>static</li>
+                <li>relative</li>
+                <li>fixed</li>
+                <li>absolute</li>
+                <li>sticky</li>
+            </ul></li>
+            <li>Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.</li>
+        </ul>
+
+        <section>
+            <h3 class="sec-head">Position:static</h3>
+            <ul>
+                <li>HTML elements are positioned static by default.</li>
+                <li>Static positioned elements are not affected by the top, bottom, left, and right properties.</li>
+                <li>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.</li>
+            </ul>
+            <div class="syntax-head">
+                <p class="syntax">Example</p>
+                div &lcub;<br>
+                position: static;<br>
+                border:3px solid #73AD21;<br>
+                &rcub;
+            </div>
+            <p class="syntax">Output:</p>
+            <div class="block-output">
+                <div class="static">This &lt;div&gt; has static position.</div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="sec-head">Position:relative</h3>
+            <ul>
+                <li>An element with position: relative; is positioned relative to its normal position.</li>
+                <li>Static positioned elements are not affected by the top, bottom, left, and right properties.</li>
+                <li>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.</li>
+            </ul>
+            <div class="syntax-head">
+                <p class="syntax">Example</p>
+                div &lcub;<br>
+                position: relative;<br>
+                border:3px solid #73AD21;<br>
+                &rcub;
+            </div>
+            <p class="syntax">Output:</p>
+            <div class="block-output">
+                <div class="relative">This &lt;div&gt; has relative position.</div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="sec-head">Position:fixed</h3>
+            <ul>
+                <li>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.</li>
+                <li>A fixed element does not leave a gap in the page where it would normally have been located.</li>   
+            </ul>
+            <div class="syntax-head">
+                <p class="syntax">Example</p>
+                div &lcub;<br>
+                position: fixed;<br>
+                border:3px solid #73AD21;<br>
+                &rcub;
+            </div>
+        
+            <div class="fixed">This &lt;div&gt; has fixed position.</div>
+        
+        </section>
+
+        <section>
+            <h3 class="sec-head">Position:absolute</h3>
+            <ul>
+               <li>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).</li>
+               <li>However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</li>
+               <li>Note: Absolute positioned elements are removed from the normal flow, and can overlap elements</li>
+            </ul>
+            <div class="syntax-head">
+                <p class="syntax">Example</p>
+                div.relative &lcub;<br>
+                position: relative;<br>
+                border:3px solid #73AD21;<br>
+                   &rcub;<br><br>
+
+                div.absolute &lcub;<br>
+                position: absolute;<br>
+                border:3px solid #73AD21;<br>
+                &rcub;
+            </div>
+            <p class="syntax">Output:</p>
+            <div class="block-output">
+                <div class="relative-two">This &lt;div&gt; has relative position.
+                <div class="absolute">This &lt;div&gt; has absolute position.</div>
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="sec-head">Position:sticky</h3>
+            <ul>
+             <li>An element with position: sticky; is positioned based on the user's scroll position.</li>
+             <li>A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</li>
+           <li>Note: Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix (see example below). You must also specify at least one of top, right, bottom or left for sticky positioning to work.</li>
+            </ul>
+            <div class="syntax-head">
+                <p class="syntax">Example</p>
+                div.relative &lcub;<br>
+                position: relative;<br>
+                border:3px solid #73AD21;<br>
+                width: 400px;<br>
+                height: 200px;<br>
+                overflow: scroll;<br>
+                &rcub;<br><br>
+                div.sticky &lcub;<br>
+                position: sticky;<br>
+                top:0;<br>
+                background-color: #578b0d;<br>
+                &rcub;
+            </div>
+            <p class="syntax">Output:</p>
+            <div class="output">
+<div class="relative re-width">
+<h1>Example of position sticky</h1>
+<p class="sticky">I am Sticky</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est consequatur praesentium aliquam sunt, ullam magnam non, error, rerum iure illo rem minima nemo at veniam soluta impedit modi eligendi fugit provident voluptatem. Distinctio doloribus at fugiat nobis obcaecati voluptates tempore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum obcaecati natus modi rem? Corporis, porro! Dolore repellat vitae ipsam necessitatibus perspiciatis nisi earum asperiores delectus commodi laborum dolor voluptatibus ea veritatis, assumenda officia, fugit at. Eaque nesciunt rem blanditiis ea?</p>
+</div>
+            </div>
+            </div>
+        </section>
+        <div class="btn-container">
+            <a href="pseudo-class.html"><button class="nav-btn">Previous</button></a>
+            <a href="css-overflow.html"><button class="nav-btn">Next</button></a>
+          </div>
+    </main>
+</body>
+</html>

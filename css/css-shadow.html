@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shoadow Effect</title>
+    <link rel="stylesheet" href="/general.css">
+   <style>
+    .text{text-shadow: 2px 2px;}
+    .text-two{text-shadow:0px 0px 5px #a688fa, 0 0 5px #2f2b3a;}
+    .box{box-shadow: 0px 0px 5px white;}
+   </style>
+</head>
+<body>
+    <main class="main">
+        <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+        <h1 class="head">CSS shadow Effects</h1>
+        <ul><li>
+            With CSS you can add shadow to text and to elements.
+        </li>
+    <li>In these chapters you will learn about the following properties:<br><br>
+    <ul>
+        <li>text-shadow</li>
+        <li>box-shadow</li>
+    </ul></li></ul>
+
+<section>
+    <h3 class="sec-head">CSS Text Shadow</h3>
+    <ul>
+        <li>The CSS text-shadow property applies shadow to text.</li>
+        <li>In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px).</li>
+    </ul>
+
+    <div class="syntax-head">
+        <p class="syntax">Example:</p>
+        <p>.text&lcub;<br>text-shadow: 2px 2px;<br>&rcub;</p>
+    </div>
+<p class="syntax">Output:</p>
+<div class="output">
+  <h1 class="text">Text Shadow Effect</h1>
+</div>
+</section>
+
+<!--sec-section-->
+<section>
+    <h3 class="sec-head">Multiple Shadows</h3>
+ <p class="sec-head-info">To add more than one shadow to the text, you can add a comma-separated list of shadows.
+
+ </p>
+
+    <div class="syntax-head">
+        <p class="syntax">Example:</p>
+        <p>.text&lcub;<br>text-shadow:0px 0px 5px #a688fa, 0 0 5px #2f2b3a;<br>&rcub;</p>
+    </div>
+<p class="syntax">Output:</p>
+<div class="output">
+  <h1 class="text-two">Text Shadow Effect</h1>
+</div>
+</section>
+
+<!--third-section-->
+<section>
+    <h3 class="sec-head">CSS Box Shadow</h3>
+ <p class="sec-head-info">The CSS box-shadow property is used to apply one or more shadows to an element.
+
+ </p>
+
+    <div class="syntax-head">
+        <p class="syntax">Example:</p>
+        <p>   h1&lcub;<br>box-shadow: 0px 0px 5px white;<br>&rcub;</p>
+    </div>
+<p class="syntax">Output:</p>
+<div class="output">
+  <h1 class="box">Text Shadow Effect</h1>
+</div>
+</section>
+
+<div class="btn-container">
+    <a href="css-3dtransform.html"><button class="nav-btn">Previous</button></a>
+    <a href="css-opacity.html"><button class="nav-btn">Next</button></a>
+  </div>
+    </main>
+</body>
+</html>

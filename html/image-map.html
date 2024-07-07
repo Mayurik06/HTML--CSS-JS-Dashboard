@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image maps</title>
+    <link rel="stylesheet" href="/general.css">
+</head>
+<body>
+ <main class="main">
+  <a href="/html-dashboard.html"> <button class="nav-btn">Back to Dashboard</button></a>
+    <h1 class="head">HTML Image Maps</h1>  
+
+        <ul>
+          <li>With HTML image maps, you can create clickable areas on an image.</li>
+          <li>The HTML &lt;map&gt; tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more &lt;area&gt; tags.</li>
+          <li>The image is inserted using the &lt;img&gt; tag. The only difference from other images is that you must add a usemap attribute.</li>
+        </ul>
+      
+        <div class="syntax-head">
+          <p class="syntax">Syntax:</p>
+          <p>
+            &lt;img src="images/free-images.jpg" usemap="#image_map" width="500px"&gt;
+            &lt;map name="image_map"&gt;<br>
+            &lt;area alt="" title="" href="images/camera.jpg" coords="538,286,722,387" shape="rect"&gt;<br>
+            &lt;area alt="" title="" href="images/tree.jpg" coords="65,66,437,339" shape="rect"&gt;<br>
+            &lt;/map&gt;   
+        </p>
+      </div>
+      <p class="syntax">Output:</p>
+          <div class="output">
+            <img src="/images/free-images.jpg" usemap="#image_map" width="500px">
+            <map name="image_map">
+              <area alt="" title="" href="/images/camera.jpg" coords="538,286,722,387" shape="rect">
+              <area alt="" title="" href="/images/tree.jpg" coords="65,66,437,339" shape="rect">
+            </map>
+    </div>     
+    <div class="btn-container">
+      <a href="iframe.html"><button class="nav-btn">Previous</button></a>
+      <a href="formatting.html"><button class="nav-btn">Next</button></a>
+    </div>
+
+ </main>   
+</body>
+</html>

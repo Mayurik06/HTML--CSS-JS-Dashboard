@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto';
+    padding: 0;
+}
+body{
+  padding: 40px 60px;
+  background-color:var(--background-color);
+  position: relative;
+}
+p{
+    margin: 0;
+    background-color: transparent;
+}
+:root{
+  --background-color:#1a1625;
+  --primary-color: #a688fa;
+  --card-surface:#2f2b3a;
+  --para-color:#908d96;
+}
+
+.head{text-align: center;
+    margin:40px 0 30px 0;
+    font-size: 40px;
+    color: var(--primary-color);
+    text-decoration: underline;
+    }
+
+    li, .syntax-head{
+        margin-bottom: 20px;
+      }
+
+      .syntax{display: block;
+        text-decoration: underline;
+    margin-bottom: 10px;
+    color: var(--primary-color);}
+
+    .sec-head{color: var(--primary-color);
+    font-size: 20px;
+margin-bottom: 20px;
+text-decoration: underline;}
+
+    
+.output{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    border: 1px solid #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+   
+}
+.block-output{
+  border: 1px solid #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+input{background-color: white;
+color: black;}
+
+.sec-head-info{
+  margin-bottom: 20px;
+}
+
+.btn-container{display: flex;
+  justify-content: space-between;
+align-items: center;
+margin-top: 30px;}
+
+.nav-btn{background-color: var(--primary-color);
+padding: 10px 15px;
+font-weight: bold;
+font-size: 18px;
+
+}

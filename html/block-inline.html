@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Block and Inline</title>
+    <link rel="stylesheet" href="/general.css">
+</head>
+<body>
+    <main class="main">
+        <a href="/html-dashboard.html"> <button class="nav-btn">Back to Dashboard</button></a>
+        <h1 class="head">HTML Block and Inline Elements</h1>
+
+        <ul>
+        <li>Every HTML element has a default display value, depending on what type of element it is. </li>
+        <li>The two most common display values are block and inline.</li>
+        </ul>
+        <section>
+            <div>
+                <h3 class="sec-head">Block-level Elements</h3>
+
+                <ul>
+                <li>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</li>
+                <li>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</li>
+                <li>Two commonly used block elements are: &lt;p&gt; and &lt;div&gt;.</li>
+                </ul>
+        
+        
+                </div>
+        
+                <div class="syntax-head">
+                    <p class="syntax">Syntax</p>
+                    <p>
+                        <p style="background-color: red; margin-bottom: 10px;">Hello World</p>
+                        <div style="background-color: blue">Hello World</div>
+                    </p>
+                </div>
+        
+                <p class="syntax">Output:</p>
+                <div class="block-output">
+                    <p style="background-color: red; margin-bottom: 10px;">Hello World</p>
+                    <div style="background-color: blue">Hello World</div>
+        
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h3 class="sec-head">Inline Elements</h3>
+    
+                    <ul>
+                    <li>An inline element does not start on a new line.</li>
+                    <li>An inline element only takes up as much width as necessary.</li>
+                 <li>&lt;span&gt;, &lt;a&gt;, &lt;lable&gt; are some inline elements in HTML</li>
+                    </ul>
+            
+            
+                    </div>
+            
+                    <div class="syntax-head">
+                        <p class="syntax">Syntax</p>
+                        <p>
+                            &lt;span style="background-color: red;"&gt;Hello World&lt;/span&gt;
+                        </p>
+                    </div>
+            
+                    <p class="syntax">Output:</p>
+                    <div class="block-output">
+                        <span style="background-color: red;">Hello World</span>
+            
+                    </div>
+                </section>
+
+                <div class="btn-container">
+                    <a href="quotation.html"><button class="nav-btn">Previous</button></a>
+                    <a href="comment.html"><button class="nav-btn">Next</button></a>
+                </div>
+    </main>
+</body>
+</html>

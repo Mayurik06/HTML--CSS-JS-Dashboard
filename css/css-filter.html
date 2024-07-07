@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filter Property</title>
+    <link rel="stylesheet" href="/general.css">
+    <style>
+        .blur{filter: blur(5px);}
+        .brightness{filter: brightness(200%);}
+        .contrast{filter: contrast(200%);}
+        .shadow{filter: drop-shadow(8px 8px 10px gray);}
+    </style>
+</head>
+<body>
+   <main class="main">
+    <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+    <h1 class="head">CSS filter Property</h1>
+    <ul>
+        <li>The filter property defines visual effects (like blur and saturation) to an element (often &lt;img&gt;).</li>
+        <li>The filters that use percentage values (i.e. 75%), also accept the value as decimal (i.e. 0.75).</li>
+    </ul>
+
+    <section>
+        <h3 class="sec-head">Filter: Blur</h3>
+
+    <div class="syntax-head">
+        <p class="syntax">Syntax:</p>
+        <p>
+            img &lcub;<br>
+            filter: blur(5px);<br>
+            &rcub;
+        </p>
+    </div>
+    <p class="syntax">Exampke:</p>
+    <div class="output">
+        <img src="/images/camera.jpg" alt="" width="300px" class="blur">
+    </div>
+    </section>
+
+<!--sec-section-->
+
+<section>
+    <h3 class="sec-head">Filter: Brightness</h3>
+
+<div class="syntax-head">
+    <p class="syntax">Syntax:</p>
+    <p>
+        img &lcub;<br>
+        filter: Brightness(200%);<br>
+        &rcub;
+    </p>
+</div>
+<p class="syntax">Exampke:</p>
+<div class="output">
+    <img src="/images/camera.jpg" alt="" width="300px" class="brightness">
+</div>
+</section>
+
+<!--third-section-->
+
+<section>
+    <h3 class="sec-head">Filter: contrast</h3>
+
+<div class="syntax-head">
+    <p class="syntax">Syntax:</p>
+    <p>
+        img &lcub;<br>
+        filter: contrast(200%);<br>
+        &rcub;
+    </p>
+</div>
+<p class="syntax">Exampke:</p>
+<div class="output">
+    <img src="/images/camera.jpg" alt="" width="300px" class="contrast">
+</div>
+</section>
+
+<!--third-section-->
+
+<section>
+    <h3 class="sec-head">Filter: drop-shadow</h3>
+
+<div class="syntax-head">
+    <p class="syntax">Syntax:</p>
+    <p>
+        img &lcub;<br>
+        filter: drop-shadow(8px 8px 10px gray);<br>
+        &rcub;
+    </p>
+</div>
+<p class="syntax">Exampke:</p>
+<div class="output">
+    <img src="/images/camera.jpg" alt="" width="300px" class="shadow">
+</div>
+</section>
+<div class="btn-container">
+    <a href="css-radial.html"><button class="nav-btn">Previous</button></a>
+    <a href="css-2dtransform.html"><button class="nav-btn">Next</button></a>
+  </div>
+   </main> 
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border</title>
+    <link rel="stylesheet" href="/general.css">
+    <style>.dotted {border-style: dotted;}
+        .dashed {border: 1px dashed blue;}
+        .solid {border-style: solid;}
+        .double {border-style: double;}
+        .groove {border-style: groove;}
+        .ridge {border-style: ridge;
+        border-radius: 2px;
+    border-color: red;}
+        .inset {border-style: inset;}
+        .outset {border-style: outset;
+        border-radius: 10px;}
+        .none {border-style: none;}
+        .hidden {border-style: hidden;}
+        .mix {border-style: dotted dashed solid double;}
+        p{
+        margin-bottom: 10px;
+        padding: 10px;}</style>
+</head>
+<body>
+<main class="main">
+    <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+    <h1 class="head">CSS Border</h1>
+<ul>
+    <li>The CSS border properties allow you to specify the style, width, and color of an element's border.</li>
+<li>The border-style property specifies what kind of border to display.</li>
+<li>The following values are allowed:<br><br>
+<ul>
+    <li>dotted - Defines a dotted border</li>
+    <li>dashed - Defines a dashed border</li>
+    <li>solid - Defines a solid border</li>
+    <li>double - Defines a double border</li>
+    <li>groove - Defines a 3D grooved border. The effect depends on the border-color value</li>
+<li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+<li>inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+<li>outset - Defines a 3D outset border. The effect depends on the border-color value</li>
+<li>none - Defines no border</li>
+<li>hidden - Defines a hidden border</li>
+</ul>
+</li>
+<li>The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</li>
+</ul>
+
+<div class="stynax-head">
+    <p class="syntax">Example:</p>
+    <p>
+        dotted &lcub;border-style: dotted;&rcub;<br>
+        dashed &lcub;border: 1px dashed blue;&rcub;<br>
+        solid &lcub;border-style: solid;&rcub;<br>
+        double &lcub;border-style: double;&rcub;<br>
+        groove &lcub;border-style: groove;&rcub;<br>
+        ridge &lcub;border-style: ridge;  border-radius: 2px;
+        border-color: red;&rcub;<br>
+        inset &lcub;border-style: inset;&rcub;<br>
+        outset &lcub;border-style: outset;  border-radius: 10px;&rcub;<br>
+        none &lcub;border-style: none;&rcub;<br>
+        hidden &lcub;border-style: hidden;&rcub;<br>
+        mix &lcub;border-style: dotted dashed solid double;&rcub;<br> 
+    </p>
+</div>
+<p class="synatx">Output:</p>
+<div class="block-output">
+    <p class="dotted">A dotted border</p>
+    <p class="dashed">A dashed border</p>
+    <p class="solid">A solid border</p>
+    <p class="double">A double border</p>
+    <p class="groove">A groove border</p>
+    <p class="ridge">A ridge border</p>
+    <p class="solid">A solid border</p>
+    <p class="inset">A inset border</p>
+    <p class="outset">A outset border</p>
+    <p class="none">A none border</p>
+    <p class="hidden">A hidden border</p>
+    <p class="mix">A mix border</p>
+</div>
+<div class="btn-container">
+    <a href="css-background.html"><button class="nav-btn">Previous</button></a>
+    <a href="css-margin.html"><button class="nav-btn">Next</button></a>
+  </div>
+</main>
+</body>
+</html>

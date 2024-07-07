@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin</title>
+    <link rel="stylesheet" href="/general.css">
+    <style>
+        .block-output{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+        <h1 class="head">CSS Margin</h1>
+        <ul>
+            <li>The CSS margin properties are used to create space around elements, outside of any defined borders.</li>
+            <li>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</li>
+      </ul>
+<section>
+    <h3 class="sec-head">Margin-Individual Sides</h3>
+    <ul>
+        <li>CSS has properties for specifying the margin for each side of an element:<br><br>
+        <ul>
+            <li>margin-top</li>
+            <li>margin-right</li>
+            <li>margin-bottom</li>
+            <li>margin-left</li>
+        </ul>
+        </li>
+        <li>All the margin properties can have the following values:<br><br>
+        <ul>
+            <li>auto - the browser calculates the margin</li>
+            <li>length - specifies a margin in px, pt, cm, etc.</li>
+            <li>% - specifies a margin in % of the width of the containing element</li>
+            <li>nherit - specifies that the margin should be inherited from the parent element</li>
+        </ul>
+        </li>
+    </ul>
+
+    <div class="syntax-head">
+        <p class="syntax">Example</p>
+        <p>
+            p &lcub;<br>
+            margin-top:100px;<br>
+            margin-right:100px;<br>
+            margin-right:150px;<br>
+            margin-left:80px;<br>
+            background-color: blue;<br>
+            &rcub;
+        </p>
+    </div>
+    <p class="syntax">Output:</p>
+    <div class="block-output">
+        <p style="margin-top: 100px; margin-bottom: 100px;
+        margin-right: 150px;margin-left: 80px;background-color: blue;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam reprehenderit iure autem nemo, quia voluptatem?</p>
+    </div>
+</section>
+<!--second-section-->
+<section>
+    <h3 class="sec-head">Margin- Shorthand Property</h3>
+    <ul>
+        <li>To shorten the code, it is possible to specify all the margin properties in one property.</li>
+        <li>The margin property is a shorthand property for the following individual margin properties:<br><br>
+        <ul>
+            <li>margin-top</li>
+            <li>margin-right</li>
+            <li>margin-bottom</li>
+            <li>margin-left</li>
+        </ul>
+        </li>
+        <li>If the margin property has four values:<br><br>
+        <ul>
+            <li style="font-weight: bold;">margin: 25px 50px 75px 100px;</li>
+            <li>top margin is 25px</li>
+            <li>right margin is 50px</li>
+            <li>bottom margin is 75px</li>
+            <li>left margin is 100px</li>
+        </ul>
+      </li>
+   </ul>
+<div class="syntax-head">
+    <p class="syntax">Example</p>
+    <p>
+        p &lcub;<br>
+        margin:80px 30px 25px 100px;<br>
+        &rcub;
+    </p>
+</div>
+<p class="syntax">Output:</p>
+<div class="block-output">
+    <p style="margin:80px 30px 25px 100px;background-color: blue;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam reprehenderit iure autem nemo, quia voluptatem?</p>
+</div>
+</section>
+<section>
+   <ul>
+        <li>If the margin property has three values:<br><br>
+            <ul>
+                <li style="font-weight: bold;">margin: 25px 50px 75px;</li>
+                <li>top margin is 25px</li>
+                <li>right and left margin is 50px</li>
+                <li>bottom margin is 75px</li> 
+            </ul>
+            </li>
+      </ul> 
+      <div class="syntax-head">
+        <p class="syntax">Example</p>
+        <p>
+            p &lcub;<br>
+            margin:80px 70px 25px;<br>
+            &rcub;
+        </p>
+    </div>
+    <p class="syntax">Output:</p>
+    <div class="block-output">
+        <p style="margin:80px 70px 25px;background-color: blue;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam reprehenderit iure autem nemo, quia voluptatem?</p>
+    </div>
+    </section>    
+    <section>
+        <ul>
+            <li>If the margin property has two values:<br><br>
+                <ul>
+                    <li style="font-weight: bold;">margin: 25px 50px;</li>
+                    <li>top and bottom margin is 25px</li>
+                    <li>right and left margin is 50px</li>
+                </ul>
+                </li>
+        </ul>
+        <div class="syntax-head">
+            <p class="syntax">Example</p>
+            <p>
+                p &lcub;<br>
+                margin:80px 70px;<br>
+                &rcub;
+            </p>
+        </div>
+        <p class="syntax">Output:</p>
+        <div class="block-output">
+            <p style="margin:80px 70px;background-color: blue;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam reprehenderit iure autem nemo, quia voluptatem?</p>
+        </div>     
+        </section>
+        <section>
+        <ul>
+                <li>If the margin property has one values:<br><br>
+                    <ul>
+                        <li style="font-weight: bold;">margin: 25px;</li>
+                        <li>all four margins are 25px</li>
+                    </ul>
+                    </li>
+         </ul>
+                <div class="syntax-head">
+                    <p class="syntax">Example</p>
+                    <p>
+                        p &lcub;<br>
+                        margin:40px;<br>
+                        &rcub;
+                    </p>
+                </div>
+                <p class="syntax">Output:</p>
+                <div class="block-output">
+                    <p style="margin:40px;background-color: blue;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam reprehenderit iure autem nemo, quia voluptatem?</p>
+                </div>         
+</section>
+
+<div class="btn-container">
+    <a href="css-border.html"><button class="nav-btn">Previous</button></a>
+    <a href="css-padding.html"><button class="nav-btn">Next</button></a>
+  </div>
+    </main>
+</body>
+</html>

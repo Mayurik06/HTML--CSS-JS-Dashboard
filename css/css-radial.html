@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Radial Gradients</title>
+    <link rel="stylesheet" href="/general.css">
+    <style>
+        .evenly,.diffrently,.shape,.keyword,.repeat{height: 200px;color: black;}
+        .evenly{background-image: radial-gradient(#a688fa, white);}
+    .diffrently{background-image: radial-gradient(#a688fa 15%, white 65%);}
+    .shape{background-image: radial-gradient(circle,#1a1625,#a688fa,white);}
+    .keyword{background-image: radial-gradient(closest-side at 60% 55%,#a688fa, white);}
+    .repeat{background-image: repeating-radial-gradient(#1a1625,#a688fa 10%,white 15%);}
+    </style>
+</head>
+<body>
+ <main class="main">
+    <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+    <h1 class="head">CSS Radial Gradients</h1>
+    <ul>
+        <li>A radial gradient is defined by its center.</li>
+        <li>To create a radial gradient you must also define at least two color stops.</li>
+    </ul>
+<section>
+    <h3 class="sec-head">Radial Gradient - Evenly Spaced Color Stops (this is default) </h3>
+
+    <div class="syntax-head">
+        <p class="syntax">Syntax:</p>
+        <p>div.radial &lcub;<br>
+            background-image: radial-gradient(#a688fa, white);<br>
+            height: 200px;<br>
+            &rcub;</p>
+    </div>
+    <p class="syntax">Example</p>
+    <div class="output">
+        <div class="evenly">This is an example of radial gradient(Evenly Spaced).</div>
+    </div>
+</section>
+
+<!--sec-section-->
+
+<section>
+    <h3 class="sec-head">Radial Gradient - Differently Spaced Color Stops</h3>
+
+    <div class="syntax-head">
+        <p class="syntax">Syntax:</p>
+        <p>div.radial &lcub;<br>
+            background-image: radial-gradient(#a688fa  5%, white 15%);<br>
+            height: 200px;<br>
+            &rcub;</p>
+    </div>
+    <p class="syntax">Example</p>
+    <div class="output">
+        <div class="diffrently">This is an example of radial gradient(Differently Spaced Color Stops).</div>
+    </div>
+</section>
+
+<!--third-section-->
+
+<section>
+    <h3 class="sec-head">Set Shape</h3>
+<p class="sec-head-info">The shape parameter defines the shape. It can take the value circle or ellipse. The default value is ellipse.</p>
+    <div class="syntax-head">
+        <p class="syntax">Syntax:</p>
+        <p>div.radial &lcub;<br>
+            background-image: radial-gradient(circle, #1a1625, #a688fa, white);<br>
+            height: 200px;<br>
+            &rcub;</p>
+    </div>
+    <p class="syntax">Example</p>
+    <div class="output">
+        <div class="shape">This is an example of radial gradient(Set shape).</div>
+    </div>
+</section>
+
+<!--fourth-section-->
+
+<section>
+    <h3 class="sec-head">Use of Different Size Keywords</h3>
+<ul>
+    <li>The size parameter defines the size of the gradient. It can take four values:<br><br>
+    <ul>
+        <li>closest-side</li>
+        <li>farthest-side</li>
+        <li>closest-corner</li>
+        <li>farthest-corner</li>
+    </ul></li>
+</ul>
+    <div class="syntax-head">
+        <p class="syntax">Syntax:</p>
+        <p>div.radial &lcub;<br>
+            background-image: radial-gradient(closest-side at 60% 55%, #a688fa, white);<br>
+            height: 200px;<br>
+        &rcub;
+        </p>
+    </div>
+    <p class="syntax">Example</p>
+    <div class="output">
+        <div class="keyword">This is an example of radial gradient(Use of Different Size Keywords).</div>
+    </div>
+</section>
+
+<!--fifth-section-->
+
+<section>
+    <h3 class="sec-head">Repeating a radial-gradient</h3>
+<p class="sec-head-info">The repeating-radial-gradient() function is used to repeat radial gradients.</p>
+    <div class="syntax-head">
+        <p class="syntax">Syntax:</p>
+        <p>div.radial &lcub;<br>
+            background-image: radial-gradient(closest-side at 60% 55%, #a688fa, white);<br>
+            height: 200px;<br>
+        &rcub;
+        </p>
+    </div>
+    <p class="syntax">Example</p>
+    <div class="output">
+        <div class="repeat">This is an example of radial gradient(Repeating a radial-gradient).</div>
+    </div>
+</section>
+<div class="btn-container">
+    <a href="css-gradient.html"><button class="nav-btn">Previous</button></a>
+    <a href="css-filter.html"><button class="nav-btn">Next</button></a>
+  </div>
+</main>   
+</body>
+</html>

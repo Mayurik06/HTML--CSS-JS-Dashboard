@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML video</title>
+    <link rel="stylesheet" href="/general.css">
+</head>
+<body>
+ <main class="main">
+    <a href="/html-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+    <h1 class="head">HTML Video</h1>
+
+    <ul>
+       <li>The HTML &lt;video&gt; element is used to show a video on a web page.</li>
+       <li>The controls attribute adds video controls, like play, pause, and volume.</li>
+       <li>The &lt;source&gt; element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.</li>
+       <li>The text between the &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element.</li>
+    </ul>
+
+    <div class="syntax-head">
+        <p class="syntax">Syntax:</p>
+        <p>
+            &lt;video width="320" height="240" controls&gt;<br>
+            &lt;source src="images/mov_bbb.mp4" type="video/mp4"&gt;<br>
+            &lt;source src="images/mov_bbb.ogg" type="video/ogg"&gt;<br>
+            &lt;/video&gt;
+        </p>
+    </div>
+
+    <p class="syntax">Output:</p>
+    <div class="output">
+        <video width="320" height="240" controls>
+            <source src="/images/mov_bbb.mp4" type="video/mp4">
+            <source src="/images/mov_bbb.ogg" type="video/ogg">
+          </video>
+    </div>
+    <div class="btn-container">
+        <a href="input.html"><button class="nav-btn">Previous</button></a>
+        <a href="audio.html"><button class="nav-btn">Next</button></a>
+      </div>
+ </main>   
+</body>
+</html>

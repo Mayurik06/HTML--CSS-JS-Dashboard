@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background</title>
+    <link rel="stylesheet" href="/general.css">
+    <style>
+        .scroll{width: 500px;
+        height: 300px;
+    overflow: scroll;
+background-image: url(/images/background.jpg);
+background-position: top;
+background-size: cover;
+background-attachment: fixed;
+}
+    </style>
+</head>
+<body>
+   <main class="main">
+    <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+
+    <h1 class="head">CSS Background</h1>
+ <ul>
+    <li>
+        The CSS background properties are used to add background effects for elements.</li>
+ <li>In these, you will learn about the following CSS background properties.<br><br>
+<ul>
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-repeat</li>
+    <li>background-attachment</li>
+    <li>background-position</li>
+<li>background(shorthand)</li>
+</ul>
+</li>
+</ul>
+
+<section>
+   <h3 class="sec-head">CSS background-color</h3> 
+  <ul>
+    <li>The background-color property specifies the background color of an element.</li>
+<li>With CSS, a color is most often specified by:<br><br>
+    <ul>
+        <li>a valid color name - like "red"</li>
+        <li>a HEX value - like "#ff0000"</li>
+        <li>an RGB value - like "rgb(255,0,0)"</li>
+    </ul>
+</li>
+</ul>
+<div class="syntax-head">
+    <p class="syntax">Example:</p>
+    <p>body &lcub;<br>
+        background-color: lightblue;<br>
+        &rcub;
+    </p>
+</div>
+<p class="syntax">Output</p>
+<div class="output">
+    <img src="/images/background-color.png" alt="" width="500px;">
+</div>
+</section>
+<!--Second-section-->
+<section>
+    <h3 class="sec-head">CSS background Image</h3> 
+   <ul>
+     <li>The background-image property specifies an image to use as the background of an element.</li>
+ <li>By default, the image is repeated so it covers the entire element.</li>
+<li>The background image can also be set for specific elements, like the &lt;p&gt; element.</li> 
+</ul>
+ <div class="syntax-head">
+     <p class="syntax">Example:</p>
+     <p>body &lcub;<br>
+         background-image: url(/images/free-images.jpg);<br>
+         &rcub;
+     </p>
+ </div>
+ <p class="syntax">Output</p>
+ <div class="output">
+     <img src="/images/background-image.png" alt="" width="500px;">
+ </div>
+ </section>
+
+ <!--Third-section-->
+ <section>
+    <h3 class="sec-head">CSS background-repeat:no-repeat</h3> 
+   <ul>
+     <li>Showing the background image only once is also specified by the background-repeat property.</li>
+</ul>
+ <div class="syntax-head">
+     <p class="syntax">Example:</p>
+     <p>body &lcub;<br>
+         background-image: url(/images/free-images.jpg);<br>
+         background-repeat: no-repeat;<br>
+         &rcub;
+     </p>
+ </div>
+ <p class="syntax">Output</p>
+ <div class="output">
+     <img src="/images/background-repeat.png" alt="" width="500px;">
+ </div>
+ </section>
+  <!--fourth-section-->
+  <section>
+    <h3 class="sec-head">CSS background-postion</h3> 
+   <ul>
+     <li>The background-position property is used to specify the position of the background image.</li>
+</ul>
+ <div class="syntax-head">
+     <p class="syntax">Example:</p>
+     <p>body &lcub;<br>
+         background-image: url(/images/free-images.jpg);<br>
+         background-repeat: no-repeat;<br>
+         background-position: right top;<br>
+         &rcub;
+     </p>
+ </div>
+ <p class="syntax">Output</p>
+ <div class="output">
+     <img src="/images/background-position.png" alt="" width="500px;">
+ </div>
+ </section>
+
+  <!--fourth-section-->
+  <section>
+    <h3 class="sec-head">CSS background-attachment</h3> 
+   <ul>
+     <li>The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).</li>
+</ul>
+ <div class="syntax-head">
+     <p class="syntax">Example:</p>
+     <p>div &lcub;<br>
+         background-image: url(/images/free-images.jpg);<br>
+         background-repeat: no-repeat;<br>
+         background-position: right top;<br>
+         &rcub;
+     </p>
+ </div>
+ <p class="syntax">Output</p>
+ <div class="output">
+  <div class="scroll">
+    <h1>This is a example of background-attachment property</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas hic nisi tenetur assumenda magni iusto incidunt, doloremque velit laborum quibusdam.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum illum aut. Laborum explicabo in corrupti nisi, sint, a numquam illum odit debitis sit harum, accusantium iusto repudiandae id qui.</p> 
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque saepe labore aspernatur modi inventore eum laborum non soluta. Nostrum optio tempora aperiam cupiditate beatae perspiciatis, nemo pariatur nulla exercitationem dignissimos fugiat eligendi a vel reiciendis eveniet debitis laudantium architecto delectus!</p>
+
+</div>
+ </div>
+ </section>
+ <div class="btn-container">
+    <a href="css-colors.html"><button class="nav-btn">Previous</button></a>
+    <a href="css-border.html"><button class="nav-btn">Next</button></a>
+  </div>
+   </main> 
+</body>
+</html>

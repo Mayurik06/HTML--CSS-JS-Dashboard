@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D Transforms</title>
+    <link rel="stylesheet" href="/general.css">
+    <style>
+      .rotatex{transform: rotateX(180deg);}
+      .rotatey{transform:rotateY(150deg);}
+      .rotatez{transform: rotateZ(180deg);}
+    </style>
+</head>
+<body>
+  <main class="main">
+    <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+    <h1 class="head">CSS 3D Transform</h1>
+    <ul>
+        <li>CSS also supports 3D transformations.</li>
+        <li>CSS also supports 3D transformations.<br><br>
+        <ul>
+            <li>rotateX()</li>
+            <li>rotateY()</li>
+            <li>rotateZ()</li>
+        </ul></li>
+    </ul>
+
+    <section>
+        <h3 class="sec-head">The rotateX() Method</h3>
+        <p class="sec-head-info">The rotateX() method rotates an element around its X-axis at a given degree.</p>
+<div class="syntax-head">
+  <p class="syntax">Example:</p>
+  <p> div &lcub;<br>transform: rotateX(180deg);<br>&rcub;</p>
+</div>
+<p class="syntax">Output:</p>
+<div class="output">
+  <div style="width: 100px; height: 100px; background-color: var(--primary-color);" class="rotatex"></div>
+</div>
+    </section>
+
+    <!--sec-two-->
+    <section>
+      <h3 class="sec-head">The rotateY() Method</h3>
+      <p class="sec-head-info">The rotateY() method rotates an element around its Y-axis at a given degree.</p>
+<div class="syntax-head">
+<p class="syntax">Example:</p>
+<p>div &lcub;<br>transform: rotateY(150deg);<br>&rcub;</p>
+</div>
+<p class="syntax">Output:</p>
+<div class="output">
+<div style="width: 100px; height: 100px; background-color: var(--primary-color);" class="rotatey"></div>
+</div>
+  </section>
+
+   <!--third-two-->
+   <section>
+    <h3 class="sec-head">The rotateZ() Method</h3>
+    <p class="sec-head-info">The rotateZ() method rotates an element around its Z-axis at a given degree.</p>
+<div class="syntax-head">
+<p class="syntax">Example:</p>
+<p>div &lcub;<br>transform: rotateZ(90deg);<br>&rcub;</p>
+</div>
+<p class="syntax">Output:</p>
+<div class="output">
+<div style="width: 100px; height: 100px; background-color: var(--primary-color);" class="rotatez"></div>
+</div>
+</section>
+
+<div class="btn-container">
+  <a href="css-2dtransform.html"><button class="nav-btn">Previous</button></a>
+  <a href="css-shadow.html"><button class="nav-btn">Next</button></a>
+</div>
+  </main>  
+</body>
+</html>

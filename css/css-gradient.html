@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients</title>
+    <link rel="stylesheet" href="/general.css">
+    <style>
+        .linear, .linear-right,.linear-diagonal,.linear-angle,.linear-multi{ height: 200px;}
+        .linear{  background-image: linear-gradient(var(--primary-color),white);}
+       .linear-right{  background-image: linear-gradient(to right,var(--primary-color),white);}
+        .linear-diagonal{background-image: linear-gradient(to bottom,var(--primary-color), white);}
+        .linear-angle{background-image: linear-gradient(150deg,var(--primary-color),white);}
+       .linear-multi{background-image: linear-gradient(#1a1625,var(--primary-color),white);}
+       </style>
+</head>
+<body>
+   <main class="main">
+    <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+    <h1 class="head">CSS Gradients</h1>
+    <ul>
+        <li>CSS gradients let you display smooth transitions between two or more specified colors.</li>
+        <li>CSS defines three types of gradients:<br><br>
+        <ul>
+            <li>Linear Gradients (goes down/up/left/right/diagonally)</li>
+            <li>Radial Gradients (defined by their center)</li>
+            <li>Conic Gradients (rotated around a center point)</li>
+        </ul></li>
+    </ul>
+
+    <section>
+        <h3 class="sec-head">CSS Linear Gradients</h3>
+        <p class="sec-head-info">To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p>
+   
+        <h3 class="sec-head">Direction- Top to Bottom(this is default)</h3>
+   <div class="syntax-head">
+    <p class="syntax">Example:</p>
+<p> 
+    div.linear &lcub;<br>
+    background-image: linear-gradient(#a688fa, white);<br>
+    height: 200px;<br>
+&rcub;<br>
+</p>
+</div>
+<div class="output">
+    <div class="linear">
+        This is an Example of Linear Gradient(top to bottom)
+    </div>
+</div>
+</section>
+
+    <!--sec-section-->
+
+    <section>
+        <h3 class="sec-head">Direction - Left to Right</h3>
+      
+        <div class="syntax-head">
+            <p class="syntax">Example:</p>
+        <p> 
+            div.linear &lcub;<br>
+            background-image: linear-gradient(to right, #a688fa, white);<br>
+            height: 200px;<br>
+        &rcub;<br>
+        </p>
+        </div>
+        <div class="output">
+            <div class="linear-right">
+                This is an Example of Linear Gradient(left to right)
+            </div>
+           </div>
+    </section>
+
+    <!--third-section-->
+
+    <section>
+        <h3 class="sec-head">Direction - Diagonal</h3>
+      <p class="sec-head-info">You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.</p>
+        <div class="syntax-head">
+            <p class="syntax">Example:</p>
+        <p> 
+            div.linear &lcub;<br>
+            background-image: linear-gradient(to bottom, #a688fa, white);<br>
+            height: 200px;<br>
+        &rcub;<br>
+        </p>
+        </div>
+        <div class="output">
+            <div class="linear-diagonal">
+                This is an Example of Linear Gradient(top to bottom)
+            </div>
+           </div>
+    </section>
+
+    <!--using angles-->
+    <section>
+        <h3 class="sec-head">Using Angles</h3>
+      <p class="sec-head-info">If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom".</p>
+        <div class="syntax-head">
+            <p class="syntax">Example:</p>
+        <p> 
+            div.linear &lcub;<br>
+            background-image: linear-gradient(150deg, #a688fa, white);<br>
+            height: 200px;<br>
+        &rcub;<br>
+        </p>
+        </div>
+        <div class="output">
+            <div class="linear-angle">
+                This is an Example of Linear Gradient(150deg)
+            </div>
+           </div>
+    </section>
+
+     <!--multiple color-->
+     <section>
+        <h3 class="sec-head">Using Multiple colors stops</h3>
+     
+        <div class="syntax-head">
+            <p class="syntax">Example:</p>
+        <p> 
+            div.linear &lcub;<br>
+            background-image: linear-gradient(#1a1625,#a688fa, white);<br>
+            height: 200px;<br>
+        &rcub;<br>
+        </p>
+        </div>
+        <div class="output">
+            <div class="linear-multi">
+                This is an Example of Linear Gradient(using multiple colors)
+            </div>
+           </div>
+    </section>
+    <div class="btn-container">
+        <a href="css-overflow.html"><button class="nav-btn">Previous</button></a>
+        <a href="css-radial.html"><button class="nav-btn">Next</button></a>
+      </div>
+   </main> 
+</body>
+</html>

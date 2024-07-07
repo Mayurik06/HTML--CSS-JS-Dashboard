@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2D Transform</title>
+    <link rel="stylesheet" href="/general.css">
+    <style>
+        .translate{
+            transform: translate(50px,100px);
+        }
+        .rotate{transform: rotate(20deg);}
+        .scale{transform: scale(1,2);}
+        .matrix{transform: matrix(1,-0.3,0,1,0,0);}
+    </style>
+</head>
+<body>
+    <main class="main">
+        <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+        <h1 class="head">CSS 2D Transforms</h1>
+        <ul>
+            <li>CSS transforms allow you to move, rotate, scale, and skew elements.</li>
+            <li>Mouse over the element below to see a 2D transformation.</li>
+       <li>With the CSS transform property you can use the following 2D transformation methods:<br><br>
+    <ul>
+        <li>translate()</li>
+        <li>rotate()</li>
+        <li>scaleX()</li>
+        <li>scale()</li>
+        <li>skewX()</li>
+        <li>skewY()</li>
+        <li>skew()</li>
+        <li>matrix()</li>
+    </ul></li>
+        </ul>
+
+<section>
+    <h3 class="sec-head">The translate() Method</h3>
+   <p class="sec-head-info">The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).</p>
+
+   <div class="syntax-head">
+    <p class="syntax">Example:</p>
+    <p> .translate &lcub;<br>
+        transform: translate(50px,100px);<br>
+    &rcub;</p>
+   </div>
+   <p class="syntax">Output:</p>
+   <div class="output">
+    <div style="width: 100px;height: 100px; background-color: var(--primary-color);" class="translate"></div>
+   </div>
+</section>
+
+<section style="margin-top: 100px;">
+    <h3 class="sec-head">The rotate() Method</h3>
+   <p class="sec-head-info">The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.</p>
+
+   <div class="syntax-head">
+    <p class="syntax">Example:</p>
+    <p> .rotate &lcub;<br>
+        transform: rotate(20deg);<br>
+    &rcub;</p>
+   </div>
+   <p class="syntax">Output:</p>
+   <div class="output">
+    <div style="width: 100px;height: 100px; background-color: var(--primary-color);" class="rotate"></div>
+   </div>
+</section>
+
+<!--third-section-->
+<section>
+    <h3 class="sec-head">The scale() Method</h3>
+   <p class="sec-head-info">The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).</p>
+
+   <div class="syntax-head">
+    <p class="syntax">Example:</p>
+    <p> .scale &lcub;<br>
+        transform: scale(1,2);<br>
+    &rcub;</p>
+   </div>
+   <p class="syntax">Output:</p>
+   <div class="output">
+    <div style="width: 100px;height: 100px; background-color: var(--primary-color);" class="scale"></div>
+   </div>
+</section>
+
+<!--fouth-section-->
+<section style="margin-top: 100px;">
+    <h3 class="sec-head">The matrix() Method</h3>
+  <ul>
+    <li>The matrix() method combines all the 2D transform methods into one.</li>
+<li>The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements.</li>
+<li>The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</li>  
+</ul>
+   <div class="syntax-head">
+    <p class="syntax">Example:</p>
+    <p> .matrix &lcub;<br>
+        transform: matrix(1, -0.3, 0, 1, 0, 0);<br>
+    &rcub;</p>
+   </div>
+   <p class="syntax">Output:</p>
+   <div class="output">
+    <div style="width: 100px;height: 100px; background-color: var(--primary-color);" class="matrix"></div>
+   </div>
+</section>
+<div class="btn-container">
+    <a href="css-filter.html"><button class="nav-btn">Previous</button></a>
+    <a href="css-3dtransform.html"><button class="nav-btn">Next</button></a>
+  </div>
+    </main>
+</body>
+</html>

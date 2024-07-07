@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts</title>
+    <link rel="stylesheet" href="/general.css">
+</head>
+<body>
+   <main class="main">
+    <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+    <h1 class="head">CSS Fonts</h1>
+ <ul>
+    <li>Choosing the right font for your website is important!</li>
+    <li>The right font can create a strong identity for your brand.</li>
+    <li>Using a font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.</li>
+ </ul>
+    <section>
+        <h3 class="sec-head">Font-Family</h3>
+        <p class="sec-head-info">In CSS, we use the font-family property to specify the font of a text.</p>
+  
+        <div class="syntax-head">
+            <p class="syntax">Example</p>
+            <p>
+                h1 &lcub;<br>
+                font-family: :Verdana, Geneva, Tahoma, sans-serif;<br>
+                &rcub;<br><br>
+
+                h4 &lcub;<br>
+                font-family: cursive;<br>
+                &rcub;<br><br>
+
+                p &lcub;<br>
+                font-family: Arial, Helvetica, sans-serif;<br>
+                &rcub;
+            </p>
+        </div>
+        <p class="syntax">Output:</p>
+        <div class="output">
+            <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif; margin-bottom: 10px;">This is a heading</h1>
+    <h4 style="font-family: cursive; margin-bottom: 10px;">This is a second heading </h4>
+            <p style="font-family: Arial, Helvetica, sans-serif;">This is a paragraph.</p>
+        </div>
+    </section>
+<!--sec-section-->
+    <section>
+        <h3 class="sec-head">Font style</h3>
+<ul>
+    <li>The font-style property is mostly used to specify italic text.</li>
+    <li>This property has three values:<br><br>
+    <ul>
+        <li>normal - The text is shown normally</li>
+        <li>italic - The text is shown in italics</li>
+        <li>oblique - The text is "leaning" (oblique is very similar to italic, but less supported)</li>
+    </ul></li>
+</ul>
+        <div class="syntax-head">
+            <p class="syntax">Example</p>
+            <p>
+                h1 &lcub;<br>
+                font-style: italic;;<br>
+                &rcub;<br><br>
+
+                h4 &lcub;<br>
+                font-style: oblique;<br>
+                &rcub;<br><br>
+            </p>
+        </div>
+        <p class="syntax">Output:</p>
+        <div class="output">
+            <h1 style="font-style: italic; margin-bottom: 10px;">This is a heading</h1>
+    <h4 style="font-style: oblique; margin-bottom: 10px;">This is a second heading </h4>
+         </div>
+    </section>
+    <!--Third-section-->
+    <section>
+        <h3 class="sec-head">Font Weight</h3>
+        <p class="sec-head-info">The font-weight property specifies the weight of a font.</p>
+  
+        <div class="syntax-head">
+            <p class="syntax">Example</p>
+            <p>
+                p &lcub;<br>
+                font-weight: bold;<br>
+                &rcub;
+            </p>
+        </div>
+        <p class="syntax">Output:</p>
+        <div class="output">
+            <p style="font-weight: bold; margin-bottom: 10px;">This is a paragraph</p>
+
+        </div>
+    </section>
+
+    <!--Fourth-section-->
+    <section>
+        <h3 class="sec-head">Font Size</h3>
+      <ul>
+        <li>The font-size property sets the size of the text. </li>
+        <li>Being able to manage the text size is important in web design. However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.</li>
+    <li>Always use the proper HTML tags, like &lt;h1&gt; - &lt;h6&gt; for headings and &lt;p&gt; for paragraphs.</li>
+    <li>The font-size value can be an absolute, or relative size.</li> 
+    </ul>
+  
+        <div class="syntax-head">
+            <p class="syntax">Example</p>
+            <p>
+                h1 &lcub;<br>
+                font-size: 40px;<br>
+                &rcub;<br><br>
+
+                p &lcub;<br>
+                font-size: 20px;<br>
+                &rcub;
+            </p>
+        </div>
+        <p class="syntax">Output:</p>
+        <div class="output">
+           <h1 style="font-size: 40px;">This is a heading</h1>
+           <p style="font-size: 20px;">This is a paragraph</p>
+        </div>
+    </section>
+    <div class="btn-container">
+        <a href="css-text.html"><button class="nav-btn">Previous</button></a>
+        <a href="css-flex.html"><button class="nav-btn">Next</button></a>
+      </div>
+</main> 
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text</title>
+    <link rel="stylesheet" href="/general.css">
+</head>
+<body>
+    <main class="main">
+        <a href="/css-dashboard.html"><button class="nav-btn">Back to Dashboard</button></a>
+        <h1 class="head">CSS Text</h1>
+       <p class="sec-head-info">CSS has a lot of properties for formatting text.</p>
+      
+      <section><h3 class="sec-head">Text Color</h3>
+       
+        <ul><li> The color property is used to set the color of the text. The color is specified by:<br><br>
+            <li>a color name - like "red"</li>
+            <li>a HEX value - like "#ff0000"</li>
+            <li>an RGB value - like "rgb(255,0,0)"</li>
+        </li>
+        </ul>
+      
+        <div class="syntax-head">
+            <p class="syntax">Example:</p>
+            <p>
+                h1 &lcub;<br>
+                color: #a52a2a;<br>
+                &rcub;
+                <br><br>
+                p &lcub;<br>
+                color: red;<br>
+                &rcub;
+            </p>
+        </div>
+        <p class="syntax">Output:</p>
+        <div class="output">
+            <h1 style="color: #a52a2a;">Example</h1>
+            <p style="color: red;">Text Color</p>
+        </div>
+    </section> 
+    <!--sec-section-->
+    <section><h3 class="sec-head">Text Alignment</h3>
+       
+        <ul>
+            <li> The text-align property is used to set the horizontal alignment of a text.</li>
+            <li>A text can be left or right aligned, centered, or justified.</li>
+        </ul>
+      
+        <div class="syntax-head">
+            <p class="syntax">Example:</p>
+            <p>
+                h1 &lcub;<br>
+                text-align:center;<br>
+                &rcub;
+                <br><br>
+                p &lcub;<br>
+             text-align:left;<br>
+                &rcub;
+            </p>
+        </div>
+        <p class="syntax">Output:</p>
+        <div class="block-output">
+            <h1 style="text-align: center;">Example</h1>
+            <p style="text-align: left;">Text alignment</p>
+        </div>
+    </section> 
+  <!--third-section-->
+  <section><h3 class="sec-head">Text Decoration</h3>
+       
+    <ul>
+        <li> The text-decoration-line property is used to add a decoration line to text.</li>
+        <li>Tip: You can combine more than one value, like overline and underline to display lines both over and under a text.</li>
+    </ul>
+  
+    <div class="syntax-head">
+        <p class="syntax">Example:</p>
+        <p>
+            h1 &lcub;<br>
+            text-decoration-line: underline;<br>
+            text-decoration-color: purple;<br>
+            &rcub;
+            <br><br>
+            p &lcub;<br>
+            text-decoration-line: overline;<br>
+            text-decoration-style: wavy;<br>
+            &rcub;
+        </p>
+    </div>
+    <p class="syntax">Output:</p>
+    <div class="block-output">
+        <h1 style="text-decoration-line:underline ; text-decoration-color:purple ; margin-bottom: 10px;">Example</h1>
+        <p style="text-decoration-line:overline; text-decoration-style: wavy;">Text Decoration</p>
+    </div>
+</section> 
+
+<!--fourth-section-->
+<section><h3 class="sec-head">Text Transform</h3>
+       
+    <ul>
+        <li> The text-transform property is used to specify uppercase and lowercase letters in a text.</li>
+        <li>It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word.</li>
+    </ul>
+  
+    <div class="syntax-head">
+        <p class="syntax">Example:</p>
+        <p>
+            h1 &lcub;<br>
+            text-transform: uppercase;<br>
+            &rcub;
+            <br><br>
+            h4 &lcub;<br>
+            text-transform: capatalize;<br>
+            &rcub;<br><br>
+            p &lcub;<br>
+            text-transform: lowercase;<br>
+            &rcub;
+        </p>
+    </div>
+    <p class="syntax">Output:</p>
+    <div class="block-output">
+        <h1 style="text-transform: uppercase;">uppercase</h1>
+        <h4 style="text-transform: capitalize;">capatalize</h4>
+        <p style="text-transform: lowercase;">Lowercase</p>
+    </div>
+</section> \
+
+<!--fifth-section-->
+<section><h3 class="sec-head">Text Spacing</h3>
+       
+    <ul>
+        <li> The text-indent property is used to specify the indentation of the first line of a text.</li>
+       <li>The letter-spacing property is used to specify the space between the characters in a text.</li>
+       <li>The line-height property is used to specify the space between lines.</li>
+       <li>The word-spacing property is used to specify the space between the words in a text.</li>
+       <li>The white-space property specifies how white-space inside an element is handled.</li>
+    </ul>
+  
+    <div class="syntax-head">
+        <p class="syntax">Example:</p>
+        <p>
+           p.red &lcub;<br>
+           text-indent: 50px;<br>
+           &rcub;<br><br>
+           h1 &lcub;<br>
+           letter-spacing: 5px;<br>
+           &rcub;<br><br>
+
+          p.blueviolet &lcub;<br>
+           line-height: 1.8;<br>
+           &rcub;<br><br>
+        </p>
+    </div>
+    <p class="syntax">Output:</p>
+    <div class="block-output">
+      <p style="text-indent: 50px; color: red; margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus debitis repellat error iure ullam deserunt amet, asperiores accusamus adipisci explicabo.</p>
+   <h1 style="letter-spacing: 5px; color:blue;margin-bottom: 10px;">letter-spacing</h1>
+   <p style="color: blueviolet; line-height: 1.8; margin-bottom: 10px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit libero repudiandae repellat nam quia voluptate ea harum quo inventore praesentium.</p>
+<p style="color: crimson; word-spacing: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsa!</p>    
+</div>
+</section>
+<div class="btn-container">
+    <a href="css-outline.html"><button class="nav-btn">Previous</button></a>
+    <a href="css-fonts.html"><button class="nav-btn">Next</button></a>
+  </div>
+</main>
+</body>
+</html>
